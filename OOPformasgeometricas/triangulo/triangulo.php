@@ -1,0 +1,28 @@
+<?php
+class triangulo{
+    //Atributos
+
+    private $base; 
+    private $altura; 
+
+    //Constructor
+    function __construct($base, $altura){
+    $this->base=$base; 
+    $this->altura=$altura; 
+    }
+
+//Métodos propios
+public function  areaTriangulo(){
+    $area = ($this->base*$this->altura)/2; 
+    return $area; 
+    }
+public function perimetroTriangulo(){
+    $hipotenusa=sqrt($this->base*$this->base+$this->altura*$this->altura); 
+    $perimetro=$hipotenusa+$this->base+$this->altura; 
+    return $perimetro; 
+}
+
+}
+
+
+?>
